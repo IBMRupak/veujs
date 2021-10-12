@@ -3,18 +3,21 @@
     <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
     <!-- <Home /> -->
-    <Home msg ="Vue JS is awesome" data="Its easy to learn"/>
+    <!-- <Home msg ="Vue JS is awesome" data="Its easy to learn"/> -->
+    <DataBind />
   </div>
 </template>
 
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
-import Home from './components/Home.vue'
+// import Home from './components/Home.vue'
+import DataBind from './components/DataBind.vue'
 export default {
   name: 'App',
   components: {
     // HelloWorld,
-    Home
+    // Home
+    DataBind
   }
 }
 </script>
