@@ -4,20 +4,39 @@
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
     <!-- <Home /> -->
     <!-- <Home msg ="Vue JS is awesome" data="Its easy to learn"/> -->
-    <DataBind />
+    <!-- <DataBind /> -->
+    <Child  v-bind:users="users"  />
   </div>
 </template>
 
 <script>
+import Child from './components/Child.vue'
 // import HelloWorld from './components/HelloWorld.vue'
 // import Home from './components/Home.vue'
-import DataBind from './components/DataBind.vue'
+// import DataBind from './components/DataBind.vue'
 export default {
   name: 'App',
   components: {
     // HelloWorld,
     // Home
-    DataBind
+    // DataBind
+    Child,
+    
+  },
+  data()
+  {
+    return { users :[
+      {
+        name:"Asif",email :"Abc@gmail.com"
+      },
+      {
+        name:"Akib",email :"Abcd@gmail.com"
+      },
+      {
+        name:"Abid",email :"Abcde@gmail.com"
+      }
+    ]
+    }
   }
 }
 </script>
