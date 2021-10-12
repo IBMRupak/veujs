@@ -37,15 +37,37 @@
 
     <!-- Composing with Components -->
 
-    <h1>Home Component</h1>
+    <!-- <h1>Home Component</h1>
     <Users/>
-    <Products/>
+    <Products/> -->
+
+
+    <!-- Templates in Veujs -->
+
+   <!-- <p v-html="rowHtml"></p>
+
+    <h3>{{name}}</h3>
+    <h3>{{a+b}}</h3>
+    <h3>{{ok}}</h3>
+    <button v-bind:disabled="disableBtn" v-on:click="updateText">Click me</button> -->
+
+<!-- 
+    Class and Style bindings -->
+
+    <h1 class ="homeStyle"> Class and Style Bindings </h1>
+
+    <h1 v-bind:style="{color:colorKey}"> Style Bindings </h1>
+
+    <h1 v-bind:class="{display:show}"> Class Bindings with Object </h1>
+
+    <h1 v-bind:class="[aclass]">Class Bindings with Array </h1>
+
 
   </div>
 </template>
 <script>
-import Users from './Users.vue'
-import Products from './Products.vue'
+// import Users from './Users.vue'
+// import Products from './Products.vue'
 
 
 export default {
@@ -89,16 +111,55 @@ export default {
   //   }
   // }
 
-  components:{
-    Users,
-    Products
+//   components:{
+//     Users,
+//     Products
+//   }
+
+  // Templates in Veujs
+
+// data()
+// {
+//   return{
+//     name : 'Peter',
+//     a:10,
+//     b:89,
+//     ok:false,
+//     rowHtml: "<h1>template in Veujs</h1>",
+//     disableBtn : false
+//   }
+// },
+// methods: {
+//   updateText()
+//   {
+// this.ok =!this.ok
+//   }
+// },
+data()
+{
+  return{
+    colorKey : 'red',
+    show : 'true',
+    aclass: 'arrayClass'
   }
+}
+
 };
 </script>
 
 <style scoped>
-div{
+/* div{
   background-color: beige;
   height: 500px;
+} */
+
+.homeStyle{
+  color: orange;
+}
+.display{
+  background-color: palegreen;
+}
+.arrayClass{
+  background-color: cyan;
 }
 </style>
