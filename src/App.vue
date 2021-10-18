@@ -6,9 +6,11 @@
     <!-- <Home msg ="Vue JS is awesome" data="Its easy to learn"/> -->
     <!-- <DataBind /> -->
     <!-- <Child  v-bind:users="users"  /> -->
-
+<!-- 
     <h1>{{title}}</h1>
-    <ChildToParent v-on:changeTitle="updateTitle($event)"/>
+    <ChildToParent v-on:changeTitle="updateTitle($event)"/> -->
+    <h1>Form using checkbox and radio button </h1>
+    <SignUp/>
 
 
   </div>
@@ -19,7 +21,8 @@
 // import HelloWorld from './components/HelloWorld.vue'
 // import Home from './components/Home.vue'
 // import DataBind from './components/DataBind.vue'
-import ChildToParent from './components/ChildToParent.vue'
+// import ChildToParent from './components/ChildToParent.vue'
+import SignUp from './components/SignUp.vue'
 export default {
   name: 'App',
   components: {
@@ -27,7 +30,8 @@ export default {
     // Home
     // DataBind
     // Child,
-    ChildToParent
+    // ChildToParent
+    SignUp
     
   },
   // data()
