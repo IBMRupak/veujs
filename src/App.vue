@@ -5,37 +5,54 @@
     <!-- <Home /> -->
     <!-- <Home msg ="Vue JS is awesome" data="Its easy to learn"/> -->
     <!-- <DataBind /> -->
-    <Child  v-bind:users="users"  />
+    <!-- <Child  v-bind:users="users"  /> -->
+
+    <h1>{{title}}</h1>
+    <ChildToParent v-on:changeTitle="updateTitle($event)"/>
+
+
   </div>
 </template>
 
 <script>
-import Child from './components/Child.vue'
+// import Child from './components/Child.vue'
 // import HelloWorld from './components/HelloWorld.vue'
 // import Home from './components/Home.vue'
 // import DataBind from './components/DataBind.vue'
+import ChildToParent from './components/ChildToParent.vue'
 export default {
   name: 'App',
   components: {
     // HelloWorld,
     // Home
     // DataBind
-    Child,
+    // Child,
+    ChildToParent
     
   },
-  data()
-  {
-    return { users :[
-      {
-        name:"Asif",email :"Abc@gmail.com"
-      },
-      {
-        name:"Akib",email :"Abcd@gmail.com"
-      },
-      {
-        name:"Abid",email :"Abcde@gmail.com"
-      }
-    ]
+  // data()
+  // {
+  //   return { users :[
+  //     {
+  //       name:"Asif",email :"Abc@gmail.com"
+  //     },
+  //     {
+  //       name:"Akib",email :"Abcd@gmail.com"
+  //     },
+  //     {
+  //       name:"Abid",email :"Abcde@gmail.com"
+  //     }
+  //   ]
+  //   }
+  // }
+
+  data(){
+    return{title:"props tutorial"}
+  },
+  methods:{
+    updateTitle(title)
+    {
+      this.title=title;
     }
   }
 }
