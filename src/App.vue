@@ -9,9 +9,10 @@
 <!-- 
     <h1>{{title}}</h1>
     <ChildToParent v-on:changeTitle="updateTitle($event)"/> -->
-    <h1>Form using checkbox and radio button </h1>
-    <SignUp/>
-
+    <!-- <h1>Form using checkbox and radio button </h1>
+    <SignUp/> -->
+<h1>Make form and get data</h1>
+<Login/>
 
   </div>
 </template>
@@ -22,7 +23,8 @@
 // import Home from './components/Home.vue'
 // import DataBind from './components/DataBind.vue'
 // import ChildToParent from './components/ChildToParent.vue'
-import SignUp from './components/SignUp.vue'
+// import SignUp from './components/SignUp.vue'
+import Login from './components/Login.vue'
 export default {
   name: 'App',
   components: {
@@ -31,7 +33,8 @@ export default {
     // DataBind
     // Child,
     // ChildToParent
-    SignUp
+   
+   Login
     
   },
   // data()
@@ -50,15 +53,15 @@ export default {
   //   }
   // }
 
-  data(){
-    return{title:"props tutorial"}
-  },
-  methods:{
-    updateTitle(title)
-    {
-      this.title=title;
-    }
-  }
+//   data(){
+//     return{title:"props tutorial"}
+//   },
+//   methods:{
+//     updateTitle(title)
+//     {
+//       this.title=title;
+//     }
+//   }
 }
 </script>
 
