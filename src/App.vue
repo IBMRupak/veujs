@@ -11,9 +11,11 @@
     <ChildToParent v-on:changeTitle="updateTitle($event)"/> -->
     <!-- <h1>Form using checkbox and radio button </h1>
     <SignUp/> -->
-<h1>Make form and get data</h1>
-<Login/>
+<!-- <h1>Make form and get data</h1>
+<Login/> -->
 
+<h1>Form VAlidation </h1>
+<Validation/>
   </div>
 </template>
 
@@ -24,7 +26,8 @@
 // import DataBind from './components/DataBind.vue'
 // import ChildToParent from './components/ChildToParent.vue'
 // import SignUp from './components/SignUp.vue'
-import Login from './components/Login.vue'
+// import Login from './components/Login.vue'
+import Validation from './components/Validation.vue'
 export default {
   name: 'App',
   components: {
@@ -34,7 +37,8 @@ export default {
     // Child,
     // ChildToParent
    
-   Login
+  //  Login
+  Validation
     
   },
   // data()
